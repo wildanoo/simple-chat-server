@@ -1,1 +1,1 @@
-This is simple chat server
+# Simple Chat App Server
