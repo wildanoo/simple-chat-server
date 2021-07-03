@@ -1,7 +1,7 @@
 const server = require('http').createServer();
 const io = require('socket.io')(server, { cors: { origin: '*' } });
 
-const PORT = '8080';
+const PORT = process.env.PORT || '8080';
 const CHAT_EVENT = 'newChatMessage';
 
 io.on('connection', (socket) => {
